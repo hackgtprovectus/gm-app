@@ -14,7 +14,6 @@ $("#realData").click(function () {
     // var location = getRealTimeLocation();
 
     $(".container").empty();
-    // initMap(location[0], location[1], false);
     requestParking(lat, long, false);
     $("#map").show();
     google.maps.event.trigger(map, 'resize');

@@ -58,8 +58,6 @@ function setDestination(loc) {
      * Takes google maps LatLng object
      */
 
-        // todo get current location or destination
-
     var start = new google.maps.LatLng(lat, long);
 
     $("#container").empty();

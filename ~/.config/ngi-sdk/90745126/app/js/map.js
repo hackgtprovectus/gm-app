@@ -1,4 +1,5 @@
 function initMap(data) {
+    $("#spinner").remove();
     var bounds = new google.maps.LatLngBounds();
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16,
@@ -9,7 +10,7 @@ function initMap(data) {
     var homeMarker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, long),
         map: map,
-        label: 'YOUR CAR'
+        icon: "http://maps.google.com/mapfiles/kml/shapes/cabs.png"
     });
 
     homeMarker.addListener('click', function () {
@@ -77,6 +78,8 @@ function requestParking(lat, long, syn) {
     window.lat = lat;
     window.long = long;
     window.syn = syn;
+
+    $("#container").append("<div id='spinner'><i class='fa fa-cog fa-spin fa-5x fa-fw'></i></div>");
 
     var park_url = "http://ec2-52-15-84-1.us-east-2.compute.amazonaws.com/api/parkinglocations";
     $.ajax({

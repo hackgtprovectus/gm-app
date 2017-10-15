@@ -24,3 +24,8 @@
 a {
     text-decoration: none;
 }
+
+#spinner {
+    margin-left: 280px;
+    margin-top: 80px;
+}
