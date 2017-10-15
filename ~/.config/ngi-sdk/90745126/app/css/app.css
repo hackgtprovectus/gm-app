@@ -1,0 +1,26 @@
+.center-block {
+    background: lightgray;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+    margin-top: 50px;
+    padding-top: 30px;
+    border: solid green;
+    border-radius: 15px;
+}
+
+#map, .route-map {
+    width: 800px;
+    height: 300px;
+    display: none;
+}
+
+.fa-home {
+    color: dimgray;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
